@@ -291,9 +291,8 @@ function CreateRoom(){
         <div className="flex flex-col items-center space-y-3">
                 <span className="text-2xl font-semi-bold leading-normal mb-4"><div className="flex flex-row justify-between w-full items-center h-12 bg-zinc-500/10 p-2 rounded-lg"><img className="h-32 w-32 object-cover" src="https://i.ibb.co/n30R7NH/logo.png"/></div> <p className="text-sm flex flex-row items-center top-5 bg-dark-3 p-1 pl-3 rounded-xl absolute right-4 top-8">{online} <FontAwesomeIcon className=" h-3 mx-2" icon={faUser} /></p></span> 
                 <div className="flex flex-row rounded-lg w-full"> 
-                <button onClick={() => router.push('/rooms/create')} className="m-2 w-full rounded-md px-4 py-2  text-gray-300 bg-zinc-500/10 hover:bg-zinc-500/20 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 transition-all duration-200 flex flex-row items-center justify-center">Create<FontAwesomeIcon className=" h-3 mx-2" icon={faPlus} /> </button>
-                <button onClick={() => joinrandom()} className="m-2 w-full rounded-md px-4 py-2  text-gray-300 bg-zinc-500/10 hover:bg-zinc-500/20 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 transition-all duration-200 flex flex-row items-center justify-center">Random<FontAwesomeIcon className=" h-3 mx-2" icon={faRandom} /></button></div>
-                 <button onClick={() => chatrandom()} className="m-2 w-full rounded-md px-4 py-2  text-gray-300 bg-zinc-500/10 hover:bg-zinc-500/20 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 transition-all duration-200 flex flex-row items-center justify-center">Chat with stranger<FontAwesomeIcon className=" h-3 mx-2" icon={faUserSecret} /></button>
+               
+        <button onClick={() => chatrandom()} className="m-2 w-full rounded-md px-4 py-2  text-gray-300 bg-zinc-500/10 hover:bg-zinc-500/20 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-opacity-50 transition-all duration-200 flex flex-row items-center justify-center">Chat with stranger<FontAwesomeIcon className=" h-3 mx-2" icon={faUserSecret} /></button>
             </div>
             <div className="flex flex-col h-full mt-4 space-y-2">
                 {rooms.map(room => {
